@@ -86,7 +86,11 @@ section {
     margin-bottom: 2rem;
     font-size: 32px;
 }
-
+.name{
+    font-size: 30px;
+    color: #3fa8d9;
+    font-weight: 500;
+}
 .grid {
     display: flex;
     flex-wrap: wrap;
