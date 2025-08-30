@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfoilo</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<link rel="stylesheet" href="portfolio.css">
+
+<body>
+
+    <header class="contain1">
+        <h2>Welcome to My Portfolio</h2>
+    </header>
+    <nav>
+        <div class="contain">
+            <ul>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="About">
+            <div class="contain">
+                <h1>About</h1>
+                <div class="grid">
+                    <div class="ab">
+                        <p>
+                            I am an motivated learner aspiring to become a Software Engineer. With a strong interest in
+                            problem-solving, coding, and building real-world applications, I am continuously working on
+                            improving my technical and analytical skills. I believe in writing clean, efficient, and
+                            scalable code while also focusing on teamwork and collaboration.
+                        </p>
+                    </div>
+                    <div class="img">
+                        <img src="My Photo.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Skills">
+            <div class="contain">
+                <h1>Skills</h1>
+                <div class="grid1">
+                    <div class="skill">
+                        <h3>Programming</h3>
+                        <p>C, DSA Through C, Java</p>
+                        <ol>
+                    </div>
+                    <div class="skill">
+                        <h3>HTML & CSS</h3>
+                        <p>Creating structure of web page and beautiful styling for websites</p>
+                    </div>
+                    <div class="skill">
+                        <h3>JavaScript</h3>
+                        <p>Adding interactivity and dynamic content to web pages</p>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+        </section>
+
+        <section id="Projects">
+            <div class="contain">
+                <h1>Projects</h1>
+                <div class="grid2">
+                    <div class="pcard">
+                        <div class="pimg">
+                            <a href="https://gudurudeekshith.github.io/calculator/" target="_blank"><img src="Calculator.jpg" alt=""></a>
+                        </div>
+                        <div class="info">
+                            <h3>Calculator Web Application</h3>
+                            <p>Developed a fully functional calculator supporting basic arithmetic operations (addition, subtraction, multiplication, division).<br>Implemented error handling for invalid inputs and division by zero.</p>
+                        </div>
+                    </div>
+                    <div class="pcard">
+                        <div class="pimg">
+                            <a href="https://gudurudeekshith.github.io/Game01/" target="_blank"><img src="Game.jpg" alt=""></a>
+                        </div>
+                        <div class="info">
+                            <h3>Rock Paper Scissor</h3>
+                            <p>Built an interactive game where users play against the computer. <br>Implemented randomization logic for computer moves to ensure unpredictability.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Contact">
+            <div class="contain">
+                <div class="cm">
+                    <h1>Contact Me</h1>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="8b9436e5-0c07-45c2-b2c8-afbf23aa7038">
+                        <div class="div1">
+                            <label for="name"><b>Name:</b></label>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                        </div>
+                        <div class="div1">
+                            <label for="email"><b>Email:</b></label>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                        </div>
+                        <div class="div1">
+                            <label for="message">Message:</label>
+                            <textarea name="Message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>&copy 2025 My Portfolio</p>
+
+    </footer>
+</body>
+
+</html>
