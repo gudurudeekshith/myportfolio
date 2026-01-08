@@ -7,11 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <link rel="stylesheet" href="portfolio.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <body>
 
     <header class="contain1">
-        <h2>Welcome to My Portfolio</h2>
+        <div class="toggle">
+            <i onclick="togg()" class="fa-solid fa-bars"></i>
+        </div>
+        <h2>My Portfolio</h2>
     </header>
     <nav>
         <div class="contain">
@@ -23,7 +29,20 @@
             </ul>
         </div>
     </nav>
-
+    <div class="contain2">
+        <div class="menu">
+            <h2>Menu</h2>
+            <i onclick="togg()" class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="names">
+            <ul>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </div>
     <main>
         <section id="About">
             <div class="contain">
@@ -40,7 +59,7 @@
                         </p>
                     </div>
                     <div class="img">
-                        <img src="My Photo.jpg" alt="">
+                        <img src="Professional Photo.jpeg" alt="">
                     </div>
                 </div>
             </div>
@@ -74,20 +93,25 @@
                 <div class="grid2">
                     <div class="pcard">
                         <div class="pimg">
-                            <a href="https://gudurudeekshith.github.io/calculator/" target="_blank"><img src="Calculator.jpg" alt=""></a>
+                            <a href="https://gudurudeekshith.github.io/calculator/" target="_blank"><img
+                                    src="Calculator.jpg" alt=""></a>
                         </div>
                         <div class="info">
                             <h3>Calculator Web Application</h3>
-                            <p>Developed a fully functional calculator supporting basic arithmetic operations (addition, subtraction, multiplication, division).<br>Implemented error handling for invalid inputs and division by zero.</p>
+                            <p>Developed a fully functional calculator supporting basic arithmetic operations (addition,
+                                subtraction, multiplication, division).<br>Implemented error handling for invalid inputs
+                                and division by zero.</p>
                         </div>
                     </div>
                     <div class="pcard">
                         <div class="pimg">
-                            <a href="https://gudurudeekshith.github.io/Game01/" target="_blank"><img src="Game.jpg" alt=""></a>
+                            <a href="https://gudurudeekshith.github.io/Game01/" target="_blank"><img src="Game.jpg"
+                                    alt=""></a>
                         </div>
                         <div class="info">
                             <h3>Rock Paper Scissor</h3>
-                            <p>Built an interactive game where users play against the computer. <br>Implemented randomization logic for computer moves to ensure unpredictability.</p>
+                            <p>Built an interactive game where users play against the computer. <br>Implemented
+                                randomization logic for computer moves to ensure unpredictability.</p>
                         </div>
                     </div>
                 </div>
@@ -109,7 +133,7 @@
                             <input type="email" name="Email" placeholder="Your Email" required>
                         </div>
                         <div class="div1">
-                            <label for="message">Message:</label>
+                            <label for="message"><b>Message:</b></label>
                             <textarea name="Message" placeholder="Your Message" required></textarea>
                         </div>
                         <button type="submit">Send Message</button>
@@ -125,6 +149,7 @@
         <p>&copy 2025 My Portfolio</p>
 
     </footer>
+    <script src="portfolio.js"></script>
 </body>
 
 </html>
