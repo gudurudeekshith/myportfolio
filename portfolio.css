@@ -120,6 +120,7 @@ section {
 
 #About h1,
 #Skills h1,
+#Education h1,
 #Projects h1,
 #Contact h1 {
     color: #4fc3f7;
@@ -169,8 +170,11 @@ section {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.5rem;
 }
-
-.skill {
+.egrid{
+    display: grid;
+    gap: 1.5rem;
+}
+.skill, .edu {
     background: rgba(255, 255, 255, 0.1);
     padding: 1.5rem;
     border-radius: 10px;
@@ -178,7 +182,7 @@ section {
     transition: transform 0.3s;
 }
 
-.skill:hover {
+.skill:hover, .edu:hover {
     transform: translateY(-5px);
     background: rgba(79, 195, 247, 0.2);
 }
